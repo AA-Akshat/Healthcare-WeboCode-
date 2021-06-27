@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,41 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style-Vansh.css">
+    <link rel="stylesheet" href="/Services.css">
+    <link rel="stylesheet" href="/Footer.css">
     <title>Document</title>
     <style>
-        .btndark{
+        /* aaa */
+        html{
+    scroll-behavior: smooth
+}
+        .aboutpage {
+            top: 75vh;
+            position: relative;
+        }
+body{
+    /* overflow-x: hidden; */
+}
+footer{
+    position: absolute;
+    top: 450vh;
+}
+
+        .btndark {
             background-color: transparent;
             border: transparent;
             color: white;
             font-weight: bolder;
             cursor: pointer;
         }
-.downarrow{
-    background-image: url("down-arrow.png");
+
+        .downarrow {
+            background-image: url("/Images/down-arrow.png");
             background-size: cover;
             position: absolute;
             width: 10vw;
@@ -29,856 +50,1066 @@
             top: 80vh;
             left: 20vw;
             animation-name: downarrow;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    
-}
-@keyframes downarrow {
-    0%{
-        opacity: 0.8;
-    }
-    50%{
-        opacity: 0.4;
-    }
-    100%{
-        opacity: 0.1;
-    }
-}
-.menu-bar {
-	border-radius: 25px;
-	height: fit-content;
-	display: inline-flex;
-	background-color: #127efc;
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-	align-items: center;
-	padding: 0 10px;
-	margin: 50px 0 0 0;
-    z-index: 4;
-    position: absolute;
-top: -10px;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
 
-}
+        }
 
-.gveblue{
-    color: #127efc;
-    }
-.menu-bar li {
-	list-style: none;
-	color: white;
-	font-family: sans-serif;
-	font-weight: bold;
-	padding: 12px 16px;
-	margin: 0 8px;
-	position: relative;
-	cursor: pointer;
-	white-space: nowrap;
-    
-}
+        @keyframes downarrow {
+            0% {
+                opacity: 0.8;
+            }
 
-.menu-bar li::before {
-	content: " ";
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: -1;
-	transition: .2s;
-	border-radius: 25px;
-}
-.menunav1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-.font1{
-    font-size: 50px;
-}
-.font2{
-    font-size: 25px;
-}
-.txt-rotate{
-    font-size: 40px;
-}
-.menu-bar li:hover {
-	color: white;
-}
+            50% {
+                opacity: 0.4;
+            }
 
-.menu-bar li:hover::before {
-	background: linear-gradient(to bottom, #e8edec, rgb(60, 200, 255));
-	box-shadow: 0px 3px 20px 0px black;
-	transform: scale(1.2);
-}
+            100% {
+                opacity: 0.1;
+            }
+        }
 
-        
-            .mainImg{
-            background-image: url("Project_155-06.jpg");
+        .menu-bar {
+            border-radius: 25px;
+            height: fit-content;
+            display: inline-flex;
+            background-color: #127efc;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            align-items: center;
+            padding: 0 10px;
+            margin: 50px 0 0 0;
+            z-index: 4;
+            position: absolute;
+            top: -10px;
+
+        }
+
+        .gveblue {
+            color: #127efc;
+        }
+
+        .menu-bar li {
+            list-style: none;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            padding: 12px 16px;
+            margin: 0 8px;
+            position: relative;
+            cursor: pointer;
+            white-space: nowrap;
+
+        }
+
+        .menu-bar li::before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            transition: .2s;
+            border-radius: 25px;
+        }
+
+        .menunav1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .font1 {
+            font-size: 50px;
+        }
+
+        .font2 {
+            font-size: 25px;
+        }
+
+        .txt-rotate {
+            font-size: 40px;
+        }
+
+        .menu-bar li:hover {
+            color: white;
+        }
+
+        .menu-bar li:hover::before {
+            background: linear-gradient(to bottom, #e8edec, rgb(60, 200, 255));
+            box-shadow: 0px 3px 20px 0px black;
+            transform: scale(1.2);
+        }
+
+
+        .mainImg {
+            background-image: url("/Images-/Project_155-06.jpg");
             background-size: cover;
             position: absolute;
             width: 70vw;
             height: 85vh;
             right: 0;
             top: 10vh;
-            
+
 
         }
-        .phnmenu{
+
+        .phnmenu {
             visibility: hidden;
         }
 
         @keyframes expand {
-            0%{
+            0% {
                 width: 200px;
                 height: 200px;
             }
-            50%{
+
+            50% {
                 width: 230px;
                 height: 230px;
             }
-            100%{
+
+            100% {
                 width: 200px;
                 height: 200px;
             }
         }
 
         .head1 {
-line-height: 0;
-  top: 40vh;
-  position: absolute;
-  margin: 10px;
-  padding: 10px;
+            line-height: 0;
+            top: 40vh;
+            position: absolute;
+            margin: 10px;
+            padding: 10px;
 
-}
-.txt-rotate{
-    color: #127efc;
-}
-.head1 { font-size: 3.5em; }
-.corona-19a{
-    background-image: url("virus-4986015.png");
-    background-size: cover;
-    position: absolute;
-    width: 5vw;
-    height: 10vh;
-    right: 10px;
-    z-index: 2;
-    animation-name: corona-19a;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+        }
 
-}
-.corona-19b{
-    background-image: url("virus-4986015.png");
-    background-size: cover;
-    position: absolute;
-    width: 5vw;
-    height: 10vh;
-    top: 15vh;
-    right: 14px;
-    z-index: 4;
-    animation-name: corona-19a;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-.corona-19c{
-    background-image: url("virus-4986015.png");
-    background-size: cover;
-    position: absolute;
-    width: 10vw;
-    height: 20vh;
-    right: 70px;
-    animation-name: corona-19a;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    z-index: 2;
-}
-@keyframes corona-19a {
-    0%{
-        width: 7vw;
-        height: 10vh;
-    }
-}
+        .txt-rotate {
+            color: #127efc;
+        }
+
+        .head1 {
+            font-size: 3.5em;
+        }
+
+        .corona-19a {
+            background-image: url("/Images-/virus-4986015.png");
+            background-size: cover;
+            position: absolute;
+            width: 5vw;
+            height: 10vh;
+            right: 10px;
+            z-index: 2;
+            animation-name: corona-19a;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+
+        }
+
+        .corona-19b {
+            background-image: url("/Images-/virus-4986015.png");
+            background-size: cover;
+            position: absolute;
+            width: 5vw;
+            height: 10vh;
+            top: 15vh;
+            right: 14px;
+            z-index: 4;
+            animation-name: corona-19a;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        .corona-19c {
+            background-image: url("/Images-/virus-4986015.png");
+            background-size: cover;
+            position: absolute;
+            width: 10vw;
+            height: 20vh;
+            right: 70px;
+            animation-name: corona-19a;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            z-index: 2;
+        }
+
+        @keyframes corona-19a {
+            0% {
+                width: 7vw;
+                height: 10vh;
+            }
+        }
 
 
 
+
+        
         @media only screen and (min-width: 698px) {
 
             .ml15 {
-  font-weight: 800;
-  font-size: 3.0em;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-family: 'Bebas Neue', cursive;
-  margin: 10px;
-  position: absolute;
-  top: 10vh;
-}
+                font-weight: 800;
+                font-size: 3.0em;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                font-family: 'Bebas Neue', cursive;
+                margin: 10px;
+                position: absolute;
+                top: 10vh;
+            }
 
-.ml15 .word {
-  display: inline-block;
-  line-height: 1em;
-}
-.word1{
-    color: #127efc;
-}
+            .ml15 .word {
+                display: inline-block;
+                line-height: 1em;
+            }
+
+            .word1 {
+                color: #127efc;
+            }
         }
+
         @media only screen and (min-width: 1268px) {
-.downarrow{
-    visibility: hidden;
-}
-            .phnmenu{
+            .downarrow {
                 visibility: hidden;
             }
-            .typefct{
+
+            .phnmenu {
                 visibility: hidden;
             }
-        .idlimg1{
-            background-image: url("idolimg1.png");
-            background-size: cover;
-            position: absolute;
-            height: 90vh;
-            width: 50vw;
-            top: 90px;
-            left: 100px;
-            animation-name:comeright ;
-            animation-duration: 5s;
-            animation-fill-mode: forwards;
-            
-            
-        }
-        .idlimg2{
-            background-image: url("idolimg2_adobespark.png");
-            background-size: cover;
-            position: absolute;
-            height: 90vh;
-            width: 50vw;
-            top: 90px;
-            left: -250px;
 
-        }
-        .idlimg3{
-            background-image: url("idolimg3_adobespark.png");
-            background-size: cover;
-            position: absolute;
-            height: 90vh;
-            width: 50vw;
-            top: 90px;
-            left: -10px;
-            animation-name:comeleft ;
-            animation-duration: 3s;
-            animation-fill-mode: forwards;
-            /* z-index: 4; */
-        }
-        @keyframes comeleft {
-            0%{
-                left: -1000px;
+            .typefct {
+                visibility: hidden;
+            }
+
+            .idlimg1 {
+                background-image: url("/Images-/idolimg1.png");
+                background-size: cover;
+                position: absolute;
+                height: 90vh;
+                width: 50vw;
+                top: 90px;
+                left: 100px;
+                animation-name: comeright;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+
+
+            }
+
+            .idlimg2 {
+                background-image: url("/Images-/idolimg2_adobespark.png");
+                background-size: cover;
+                position: absolute;
+                height: 90vh;
+                width: 50vw;
+                top: 90px;
+                left: -250px;
+
+            }
+
+            .idlimg3 {
+                background-image: url("/Images-/idolimg3_adobespark.png");
+                background-size: cover;
+                position: absolute;
+                height: 90vh;
+                width: 50vw;
+                top: 90px;
+                left: -10px;
+                animation-name: comeleft;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
+                /* z-index: 4; */
+            }
+
+            @keyframes comeleft {
+                0% {
+                    left: -1000px;
+                }
+            }
+
+            @keyframes comeright {
+                0% {
+                    left: 120vw;
+                }
+            }
+
+            .dis1 {
+                background-image: url("/Images-/cancer.png");
+                background-size: cover;
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                right: 38vw;
+                top: 10vh;
+                z-index: 1;
+                animation-name: expand;
+                animation-iteration-count: infinite;
+                animation-duration: 3s;
+                transform: rotate(-5deg);
+
+            }
+
+            .dis2 {
+                background-image: url("/Images-/covid.png");
+                background-size: cover;
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                right: 30vw;
+                top: 10vh;
+                z-index: 1;
+                animation-name: expand;
+                animation-iteration-count: infinite;
+                animation-duration: 3s;
+                transform: rotate(40deg);
+
+            }
+
+            .dis3 {
+                background-image: url("/Images-/dengue.png");
+                background-size: cover;
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                right: 25vw;
+                top: 18vh;
+                z-index: 1;
+                animation-name: expand;
+                animation-iteration-count: infinite;
+                animation-duration: 3s;
+                transform: rotate(-40deg);
+
             }
         }
-        @keyframes comeright {
-            0%{
-                left: 120vw;
+
+        /* @media only screen and (max-width:752px) {
+            .footer{
+                position: absolute;
+                bottom: 0;
+            }
+        } */
+
+
+        
+        @media only screen and (max-width:916px) {
+            footer{
+                visibility: hidden;
             }
         }
-        .dis1{
-            background-image: url("cancer.png");
-            background-size: cover;
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            right: 38vw;
-            top: 10vh;
-            z-index: 1;
-            animation-name: expand;
-            animation-iteration-count: infinite;
-            animation-duration: 3s;
-            transform: rotate(-5deg);
+        @media only screen and (max-width:698px) {
 
-        }
-        .dis2{
-            background-image: url("covid.png");
-            background-size: cover;
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            right: 30vw;
-            top: 10vh;
-            z-index: 1;
-            animation-name: expand;
-            animation-iteration-count: infinite;
-            animation-duration: 3s;
-            transform: rotate(40deg);
-
-        }
-        .dis3{
-            background-image: url("dengue.png");
-            background-size: cover;
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            right: 25vw;
-            top: 18vh;
-            z-index: 1;
-            animation-name: expand;
-            animation-iteration-count: infinite;
-            animation-duration: 3s;
-            transform: rotate(-40deg);
-
-        }
-        }
-        @media only screen and (max-width:698px){
             /* phone */
-            .downarrow{
+            .downarrow {
                 visibility: hidden;
             }
-            .corona-19a{
+
+            .corona-19a {
                 visibility: hidden;
             }
-            .corona-19b{
+
+            .corona-19b {
                 visibility: hidden;
             }
-            .corona-19c{
+
+            .corona-19c {
                 visibility: hidden;
             }
-            .menunav1
-            {
+
+            .menunav1 {
                 visibility: hidden;
             }
-            .phnmenu{
+
+            .phnmenu {
                 visibility: visible;
             }
-            .typefct{
+
+            .typefct {
                 visibility: hidden;
             }
-            .mainImg{
+
+            .mainImg {
                 visibility: hidden;
             }
-            body{
-                background-image: url("Project_155-06.jpg");
-            background-size: cover;
-            position: absolute;
-            width: 70vw;
-            height: 85vh;
-            right: 0;
-            top: 10vh;
-            background-repeat: no-repeat;
+
+            body {
+                background-image: url("/Images-/Project_155-06.jpg");
+                background-size: cover;
+                position: absolute;
+                width: 70vw;
+                height: 85vh;
+                right: 0;
+                top: 10vh;
+                background-repeat: no-repeat;
             }
+
             @import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:800,900");
 
 
 
 
-nav {
-	display: block;
-	position: fixed;
-	width: 500px;
-	height: 500px;
-	user-select: none;
-	transform: translate3d(25px, -25px, 0);
-	transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
-}
+            nav {
+                display: block;
+                position: fixed;
+                width: 500px;
+                height: 500px;
+                user-select: none;
+                transform: translate3d(25px, -25px, 0);
+                transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+            }
 
-nav.open {
-	transform: translate3d(0, 0, 0);
-}
+            nav.open {
+                transform: translate3d(0, 0, 0);
+            }
 
-nav.top-right {
-	top: -140px;
-	right: -140px;
-}
+            nav.top-right {
+                top: -140px;
+                right: -140px;
+            }
 
-.disc {
-	position: absolute;
-	display: inline-block;
-	text-align: center;
-	cursor: pointer;
-	font: 25px Alegreya Sans, sans-serif;
-	line-height: 40px;
-	padding-top: 10px;
-	border-radius: 250px;
-	transform: scale3d(0.5, 0.5, 0.5) rotate3d(0, 0, 1, 190deg);
-	pointer-events: none;
-	opacity: 0;
-	cursor: pointer;
-	transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s;
-}
+            .disc {
+                position: absolute;
+                display: inline-block;
+                text-align: center;
+                cursor: pointer;
+                font: 25px Alegreya Sans, sans-serif;
+                line-height: 40px;
+                padding-top: 10px;
+                border-radius: 250px;
+                transform: scale3d(0.5, 0.5, 0.5) rotate3d(0, 0, 1, 190deg);
+                pointer-events: none;
+                opacity: 0;
+                cursor: pointer;
+                transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s;
+            }
 
-.disc div {
-	transform: rotate(180deg);
-}
+            .disc div {
+                transform: rotate(180deg);
+            }
 
-.open .disc {
-	pointer-events: auto;
-	opacity: 1;
-}
+            .open .disc {
+                pointer-events: auto;
+                opacity: 1;
+            }
 
-.l1 {
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
-	background: #127efc;
-	transition-delay: 0s;
-    
-}
+            .l1 {
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                background: #127efc;
+                transition-delay: 0s;
 
-.open .l1 {
-	transition-delay: 0s;
-	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
-	opacity: 1;
-}
+            }
 
-.open .l1:hover {
-	background: shade(tomato, 90%);
-	color: tomato;
-	transition-delay: 0s;
-}
+            .open .l1 {
+                transition-delay: 0s;
+                transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+                opacity: 1;
+            }
 
-.open .l1:active {
-	background: shade(tomato, 50%);
-	color: tomato;
-}
+            .open .l1:hover {
+                background: shade(tomato, 90%);
+                color: tomato;
+                transition-delay: 0s;
+            }
 
-.open .l1.toggle {
-	transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
-}
+            .open .l1:active {
+                background: shade(tomato, 50%);
+                color: tomato;
+            }
 
-.l2 {
-	top: 50px;
-	left: 50px;
-	right: 50px;
-	bottom: 50px;
-	background: white;
-	transition-delay: 0.1s;
-}
+            .open .l1.toggle {
+                transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+            }
 
-.open .l2 {
-	transition-delay: 0.1s;
-	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
-	opacity: 1;
-}
+            .l2 {
+                top: 50px;
+                left: 50px;
+                right: 50px;
+                bottom: 50px;
+                background: white;
+                transition-delay: 0.1s;
+            }
 
-.open .l2:hover {
-	background: shade(#ff7a39, 90%);
-	color: #ff7a39;
-	transition-delay: 0s;
-}
+            .open .l2 {
+                transition-delay: 0.1s;
+                transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+                opacity: 1;
+            }
 
-.open .l2:active {
-	background: shade(#ff7a39, 50%);
-	color: #ff7a39;
-}
+            .open .l2:hover {
+                background: shade(#ff7a39, 90%);
+                color: #ff7a39;
+                transition-delay: 0s;
+            }
 
-.open .l2.toggle {
-	transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
-}
+            .open .l2:active {
+                background: shade(#ff7a39, 50%);
+                color: #ff7a39;
+            }
 
-.l3 {
-	top: 100px;
-	left: 100px;
-	right: 100px;
-	bottom: 100px;
-	background: #127efc;
-	transition-delay: 0.2s;
-}
+            .open .l2.toggle {
+                transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+            }
 
-.open .l3 {
-	transition-delay: 0.2s;
-	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
-	opacity: 1;
-}
+            .l3 {
+                top: 100px;
+                left: 100px;
+                right: 100px;
+                bottom: 100px;
+                background: #127efc;
+                transition-delay: 0.2s;
+            }
 
-.open .l3:hover {
-	background: shade(#ff912b, 90%);
-	color: #ff912b;
-	transition-delay: 0s;
-}
+            .open .l3 {
+                transition-delay: 0.2s;
+                transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+                opacity: 1;
+            }
 
-.open .l3:active {
-	background: shade(#ff912b, 50%);
-	color: #ff912b;
-}
+            .open .l3:hover {
+                background: shade(#ff912b, 90%);
+                color: #ff912b;
+                transition-delay: 0s;
+            }
 
-.open .l3.toggle {
-	transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
-}
+            .open .l3:active {
+                background: shade(#ff912b, 50%);
+                color: #ff912b;
+            }
 
-.l4 {
-	top: 150px;
-	left: 150px;
-	right: 150px;
-	bottom: 150px;
-	background: white;
-	transition-delay: 0.3s;
-}
+            .open .l3.toggle {
+                transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+            }
 
-.open .l4 {
-	transition-delay: 0.3s;
-	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
-	opacity: 1;
-}
+            .l4 {
+                top: 150px;
+                left: 150px;
+                right: 150px;
+                bottom: 150px;
+                background: white;
+                transition-delay: 0.3s;
+            }
 
-.open .l4:hover {
-	background: shade(#ffa91c, 90%);
-	color: #ffa91c;
-	transition-delay: 0s;
-}
+            .open .l4 {
+                transition-delay: 0.3s;
+                transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+                opacity: 1;
+            }
 
-.open .l4:active {
-	background: shade(#ffa91c, 50%);
-	color: #ffa91c;
-}
+            .open .l4:hover {
+                background: shade(#ffa91c, 90%);
+                color: #ffa91c;
+                transition-delay: 0s;
+            }
 
-.open .l4.toggle {
-	transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
-}
+            .open .l4:active {
+                background: shade(#ffa91c, 50%);
+                color: #ffa91c;
+            }
 
-.l5 {
-	top: 200px;
-	left: 200px;
-	right: 100px;
-	bottom: 200px;
-	/* background: #127efc;
+            .open .l4.toggle {
+                transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+            }
+
+            .l5 {
+                top: 200px;
+                left: 200px;
+                right: 100px;
+                bottom: 200px;
+                /* background: #127efc;
      */
-     background: transparent;
-	transition-delay: 0.4s;
-}
+                background: transparent;
+                transition-delay: 0.4s;
+            }
 
-.open .l5 {
-	transition-delay: 0.4s;
-	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
-	opacity: 1;
-}
+            .open .l5 {
+                transition-delay: 0.4s;
+                transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+                opacity: 1;
+            }
 
-.open .l5:hover {
-	background: shade(#ffc00e, 90%);
-	color: #ffc00e;
-	transition-delay: 0s;
-}
+            .open .l5:hover {
+                background: shade(#ffc00e, 90%);
+                color: #ffc00e;
+                transition-delay: 0s;
+            }
 
-.open .l5:active {
-	background: shade(#ffc00e, 50%);
-	color: #ffc00e;
-}
+            .open .l5:active {
+                background: shade(#ffc00e, 50%);
+                color: #ffc00e;
+            }
 
-.open .l5.toggle {
-	transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
-}
+            .open .l5.toggle {
+                transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+            }
 
-.toggle {
-/* background-color:#127efc; */
-background-image: url("square.png");
-    background-size: cover;
-    width: 50px;
-    height: 50px;
-	line-height: 50px;
-	padding: 0;
-    font-size: 0px;
-	right: 60vw;
-	opacity: 1;
-	transform: none;
-	pointer-events: auto;
-	transition-delay: 0s;
-}
+            .toggle {
+                /* background-color:#127efc; */
+                background-image: url("/Images-/square.png");
+                background-size: cover;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                padding: 0;
+                font-size: 0px;
+                right: 60vw;
+                opacity: 1;
+                transform: none;
+                pointer-events: auto;
+                transition-delay: 0s;
+            }
 
-.open .toggle {
-	transform: rotate3d(0, 0, 1, 0deg);
-}
+            .open .toggle {
+                transform: rotate3d(0, 0, 1, 0deg);
+            }
 
-.toggle:hover {
-	background: shade(gold, 90%);
-	color: white;
-}
+            .toggle:hover {
+                background: shade(gold, 90%);
+                color: white;
+            }
 
-.toggle:active {
-	background: shade(gold, 50%);
-	color: rgba(255, 215, 0, 0.5);
-	transform: scale(0.9);
-	transition-duration: 0s;
-}
-.ml15 {
-  font-weight: 800;
-  font-size: 2.0em;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-family: 'Bebas Neue', cursive;
-  margin: 10px;
-  position: absolute;
-  top: -10vh;
-}
+            .toggle:active {
+                background: shade(gold, 50%);
+                color: rgba(255, 215, 0, 0.5);
+                transform: scale(0.9);
+                transition-duration: 0s;
+            }
 
-.ml15 .word {
-  display: inline-block;
-  line-height: 1em;
-}
-.word1{
-    color: #127efc;
-}
+            .ml15 {
+                font-weight: 800;
+                font-size: 2.0em;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                font-family: 'Bebas Neue', cursive;
+                margin: 10px;
+                position: absolute;
+                top: -10vh;
+            }
+
+            .ml15 .word {
+                display: inline-block;
+                line-height: 1em;
+            }
+
+            .word1 {
+                color: #127efc;
+            }
         }
 
         .ml4 {
-  position: relative;
-  font-weight: 900;
-  font-size: 4.5em;
-}
-.ml4 .letters {
-  position: absolute;
-  margin: auto;
-  top: 35vh;
-  right: 0;
-  opacity: 0; 
-  font-family: 'Viaoda Libre', cursive;
-}
-.mv1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
+            position: relative;
+            font-weight: 900;
+            font-size: 4.5em;
+        }
 
-.corona19{
-    background-image: url("covidvector.png");
+        .ml4 .letters {
+            position: absolute;
+            margin: auto;
+            top: 35vh;
+            right: 0;
+            opacity: 0;
+            font-family: 'Viaoda Libre', cursive;
+        }
+
+        .mv1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .corona19 {
+            background-image: url("/Images-/covidvector.png");
             background-size: cover;
             position: absolute;
             width: 80px;
             height: 50px;
             right: 10px;
             top: 10px;
-}
-
+        }
     </style>
 </head>
+
 <body>
     <div class="multidoc"></div>
     <div class="corona-19a"></div>
     <div class="corona-19b"></div>
     <div class="corona-19c"></div>
     <div class="phnmenu">
-    <nav class="top-right open">
+        <nav class="top-right open">
 
-        <a class="disc l2">
-            <div>Services</div>
-        </a>
-        <a class="disc l3">
-            <div>Contact</div>
-        </a>
-        <a class="disc l4">
-            <div>About</div>
-        </a>
-        <a class="disc l5 toggle">
-            
-        </a>
-    </nav>
-</div>
-<div class="typefct">
-<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-<div class="head1"><p class="font1">We</p>
-    <p class="font2">
-    at HEALTH<span class="gveblue">IQ</span></p>
-  <p
-     class="txt-rotate"
-     data-period="2000"
-     data-rotate='[ "ask?", "analyze..", "prescribe!" ]'></p>
-</div>
-</div>
+            <a class="disc l2" href="#Services" style="text-decoration: none;">
+                <div>Services</div>
+            </a>
+            <a class="disc l3" href="#Location" style="text-decoration: none;">
+                <div>Contact</div>
+            </a>
+            <a class="disc l4" href="#About" style="text-decoration: none;">
+                <div>About</div>
+            </a>
+            <a class="disc l5 toggle">
+
+            </a>
+        </nav>
+    </div>
+    <div class="typefct">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+        <div class="head1">
+            <p class="font1">We</p>
+            <p class="font2">
+                at HEALTH<span class="gveblue">IQ</span></p>
+            <p class="txt-rotate" data-period="2000" data-rotate='[ "ask?", "analyze..", "prescribe!" ]'></p>
+        </div>
+    </div>
 
     <div class="backhead">
-    <div class="menunav1">
-        <ul class="menu-bar">
-            <li id="li1">About</li>
-            <li id="li2">Services</li>
-            <li>Contact</li>
-            <li>Graph</li>
-            <li>Footer</li>
-            <li><button onclick="myFunction()" class="btndark">THEME</button></li>
-        </ul>
+        <div class="menunav1">
+            <ul class="menu-bar">
+                <li id="li1"><a href="#About" style="text-decoration: none;color: white;">About</a></li>
+                <li id="li2"><a href="#Services" style="text-decoration: none;color: white;">Services</a></li>
+                <li><a href="#Location" style="text-decoration: none;color: white;">Contact</a></li>
+                <li><a href="/graph.html" style="text-decoration: none;color: white;">Graph</a></li>
+                <li><a href="#Footer" style="text-decoration: none;color: white;">Footer</a></li>
+                <li><button onclick="myFunction()" class="btndark">THEME</button></li>
+            </ul>
         </div>
-        
-    <div class="header">
-        <h1 class="ml15">
-            <span class="word">HEALTH</span>
-            <span class="word word1">IQ</span>
-          </h1>
-          <div class="dis1"></div>
-          <div class="dis2"></div>
-          <div class="dis3"></div>
-        <div class="mainImg">
+
+        <div class="header" id="Home">
+            <h1 class="ml15">
+                <span class="word">HEALTH</span>
+                <span class="word word1">IQ</span>
+            </h1>
+            <div class="dis1"></div>
+            <div class="dis2"></div>
+            <div class="dis3"></div>
+            <div class="mainImg">
+
+            </div>
+            <div class="idlimg1"></div>
+            <div class="idlimg2"></div>
+            <div class="idlimg3"></div>
+
 
         </div>
-        <div class="idlimg1"></div>
-        <div class="idlimg2"></div>
-        <div class="idlimg3"></div>
-        
-        
+        <div class="mv1">
+            <h1 class="ml4">
+                <span class="letters letters-1">HEALTH<span class="gveblue">IQ</span></span>
+                <span class="letters letters-2">for</span>
+                <span class="letters letters-3">you</span>
+            </h1>
+        </div>
     </div>
-    <div class="mv1">
-    <h1 class="ml4">
-        <span class="letters letters-1">HEALTH<span class="gveblue">IQ</span></span>
-        <span class="letters letters-2">for</span>
-        <span class="letters letters-3">you</span>
-      </h1>
-</div>
-</div>
-<div class="downarrow"></div>
+    <!-- about us -->
+
+    <div class="aboutpage" id="About">
+        <div id="AboutUs" class="smallcontainer">
+            <h2 class="Heading">About Us</h2>
+            <p>An Initiative to help the Students, Alumini, Faculty and their families of NSUT in the ongoing Covid-19
+                crisis in India</p>
+            <img src="/Images-/AboutUs.png" alt="">
+            <div class="row">
+                <div class="col-2">
+                    <img src="/Images-/Icubeds.jpg" alt="">
+                    <h4>Oxygenated Beds</h4>
+                </div>
+                <div class="col-2">
+                    <img src="/Images-/staff.PNG" alt="">
+                    <h4>Medical Staff</h4>
+                </div>
+                <div class="col-2">
+                    <img src="/Images-/concentrator.jpg" alt="">
+                    <h4>Oxygen Concentrators</h4>
+                </div>
+                <div class="col-2">
+                    <img src="/Images-/Medicine.jpg" alt="">
+                    <h4>Medicine</h4>
+                </div>
+            </div>
+        </div>
+        <section>
+            <h2 class="Services" id="Services">Our Services</h2>
+        </section>
+
+        <section class="services_flex">
+            <div class="obeds">
+                <h3 class="SH">Oxygenated Beds</h3>
+                <p class="SP">In collaboration with ISKCON, <br>100 oxygen beds are being set up in NSUT <br> with
+                    complete operations.</p>
+            </div>
+
+            <div class="icubeds">
+                <h3 class="SH">Critical Care Beds</h3>
+                <p class="SP">The Covid Care Center will have a provision <br> of 20 Critical Care Beds.</p>
+            </div>
+
+            <div class="services_img">
+                <img src="/Images-/services.png" alt="" id="serv_img">
+            </div>
+
+            <div class="staff">
+                <h3 class="SH">Medical and Support Staff</h3>
+                <p class="SP">A Team of retired Doctors have <br> volunteered their service for <br> facilitating
+                    primary care to the patients. </p>
+            </div>
+
+            <div class="test">
+                <h3 class="SH">Testing and Medicines</h3>
+                <p class="SP">The Covid Care center will have <br> an adequate provision of <br> testing kits and
+                    medicines.</p>
+            </div>
+
+            <br><br><br><br>
+        </section>
+        <div id="" class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Alone we are Strong, <br>Together we can be Stronger!!!</h1>
+                    <p>Play Your Part in the Fight against Covid-19</p>
+                    <a class="Explore" href=""><b>Donate Now</b> </a>
+                </div>
+                <div class="col">
+                    <img src="/Images-/Doctors-rafiki.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="" class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="/Images-/Hostels.jpg" alt="">
+                </div>
+                <div class="col">
+                    <h1 id="Location">Location</h1>
+                    <p>The Heart of Our Operarion!!!</p>
+                    <a class="Explore"
+                        href="https://www.google.com/maps/place/Netaji+Subhas+University+of+Technology/@28.6100216,77.0379647,15z/data=!4m5!3m4!1s0x0:0x108adaa3abe4bd07!8m2!3d28.6100216!4d77.0379647"
+                        target="_blank"><b>Directions</b> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+    <div class="downarrow"></div>
+
+
+        <footer>
+            <div class="store" id="Footer">
+                <h4>Download our app</h4>
+                <p>Download App for Android and IOS</p>
+                <a href="#"><img src="/Images-/play store.png" alt="" width="100px"></a>
+                <a href="#"><img src="/Images-/app store.png" alt="" width="100px"></a>
+            </div>
+
+            <div class="features">
+                <img src="/Images-/Logo.jpeg" alt="" width="230px">
+                <ul>
+                    <li>
+                        <p>100 Oxygenated Beds</p>
+                    </li>
+                    <li>
+                        <p>20 "Critical Care beds" Setup </p>
+                    </li>
+                    <li>
+                        <p>Medical and Support Staff</p>
+                    </li>
+                    <li>
+                        <p>Testing and Medicines</p>
+                    </li>
+                    <li>
+                        <p>Administration and Logistics</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="useful-links">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About Us</a></li>
+                    <li><a href="#Services">Our Services</a></li>
+                    <li><a href="/graph.html">Our Statistics</a> </li>
+                </ul>
+            </div>
+
+            <div class="Contact-me">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a class="insta" href="https://www.instagram.com/covidcarecentrensut/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a class="linkedin" href="https://www.linkedin.com/company/nsut-alumni-records/about/" target="_blank">LinkedIn</a></li>
+                    <li><a class="facebook" href="https://www.facebook.com/groups/nsit.dtu/?multi_permalinks=4055350451212580" target="_blank">Facebook</a></li>
+                    <li><a class="github" href="#" target="_blank">Github</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <section>
+            <!-- <p class="announcement">
+                Copyright © 2021 All Rights Reserved
+            </p> -->
+        </section>
+
     <script>
         var ml4 = {};
-ml4.opacityIn = [0,1];
-ml4.scaleIn = [0.2, 1];
-ml4.scaleOut = 3;
-ml4.durationIn = 800;
-ml4.durationOut = 600;
-ml4.delay = 500;
-let mv1=document.querySelector(".mv1");
-anime.timeline({loop: false})
-  .add({
-    targets: '.ml4 .letters-1',
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn
-  }).add({
-    targets: '.ml4 .letters-1',
-    opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
-    easing: "easeInExpo",
-    delay: ml4.delay
-  }).add({
-    targets: '.ml4 .letters-2',
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn
-  }).add({
-    targets: '.ml4 .letters-2',
-    opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
-    easing: "easeInExpo",
-    delay: ml4.delay
-  }).add({
-    targets: '.ml4 .letters-3',
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn
-  }).add({
-    targets: '.ml4 .letters-3',
-    opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
-    easing: "easeInExpo",
-    delay: ml4.delay
-  }).add({
-    targets: '.ml4',
-    opacity: 0,
-    duration: 500,
-    delay: 500
-  });
+        ml4.opacityIn = [0, 1];
+        ml4.scaleIn = [0.2, 1];
+        ml4.scaleOut = 3;
+        ml4.durationIn = 800;
+        ml4.durationOut = 600;
+        ml4.delay = 500;
+        let mv1 = document.querySelector(".mv1");
+        anime.timeline({ loop: false })
+            .add({
+                targets: '.ml4 .letters-1',
+                opacity: ml4.opacityIn,
+                scale: ml4.scaleIn,
+                duration: ml4.durationIn
+            }).add({
+                targets: '.ml4 .letters-1',
+                opacity: 0,
+                scale: ml4.scaleOut,
+                duration: ml4.durationOut,
+                easing: "easeInExpo",
+                delay: ml4.delay
+            }).add({
+                targets: '.ml4 .letters-2',
+                opacity: ml4.opacityIn,
+                scale: ml4.scaleIn,
+                duration: ml4.durationIn
+            }).add({
+                targets: '.ml4 .letters-2',
+                opacity: 0,
+                scale: ml4.scaleOut,
+                duration: ml4.durationOut,
+                easing: "easeInExpo",
+                delay: ml4.delay
+            }).add({
+                targets: '.ml4 .letters-3',
+                opacity: ml4.opacityIn,
+                scale: ml4.scaleIn,
+                duration: ml4.durationIn
+            }).add({
+                targets: '.ml4 .letters-3',
+                opacity: 0,
+                scale: ml4.scaleOut,
+                duration: ml4.durationOut,
+                easing: "easeInExpo",
+                delay: ml4.delay
+            }).add({
+                targets: '.ml4',
+                opacity: 0,
+                duration: 500,
+                delay: 500
+            });
 
-  anime.timeline({loop: false})
-  .add({
-    targets: '.ml15 .word',
-    scale: [14,1],
-    opacity: [0,1],
-    easing: "easeOutCirc",
-    duration: 800,
-    delay: (el, i) => 800 * i
-  }).add({
-    targets: '.ml15',
-    opacity: 1,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
+        anime.timeline({ loop: false })
+            .add({
+                targets: '.ml15 .word',
+                scale: [14, 1],
+                opacity: [0, 1],
+                easing: "easeOutCirc",
+                duration: 800,
+                delay: (el, i) => 800 * i
+            }).add({
+                targets: '.ml15',
+                opacity: 1,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
 
-  });
-  count=0;
-  function myFunction() {
-      var element = document.querySelector(".menu-bar");
-      var li = document.querySelector("li");
-      if(count%2==0){
-        element.style.backgroundColor="black";
-       
-      }
-      else{
-        element.style.backgroundColor="#127efc";
-      }
-      count++;
+            });
+        count = 0;
+        function myFunction() {
+            var element = document.querySelector(".menu-bar");
+            var li = document.querySelector("li");
+            if (count % 2 == 0) {
+                element.style.backgroundColor = "black";
 
-    
-  }
-//   ----
-var TxtRotate = function(el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
+            }
+            else {
+                element.style.backgroundColor = "#127efc";
+            }
+            count++;
 
-TxtRotate.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
 
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
+        }
+        //   ----
+        var TxtRotate = function (el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
 
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+        TxtRotate.prototype.tick = function () {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
 
-  var that = this;
-  var delta = 300 - Math.random() * 100;
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
 
-  if (this.isDeleting) { delta /= 2; }
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
+            var that = this;
+            var delta = 300 - Math.random() * 100;
 
-  setTimeout(function() {
-    that.tick();
-  }, delta);
-};
+            if (this.isDeleting) { delta /= 2; }
 
-window.onload = function() {
-  var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-  document.body.appendChild(css);
-};
-toggle = document.querySelectorAll(".toggle")[0];
-nav = document.querySelectorAll("nav")[0];
-toggle_open_text = 'Menu';
-toggle_close_text = 'Close';
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
 
-toggle.addEventListener('click', function() {
-	nav.classList.toggle('open');
-	
-  if (nav.classList.contains('open')) {
-    toggle.innerHTML = toggle_close_text;
-  } else {
-    toggle.innerHTML = toggle_open_text;
-  }
-}, false);
+            setTimeout(function () {
+                that.tick();
+            }, delta);
+        };
 
-setTimeout(function(){
-	nav.classList.toggle('open');	
-}, 800);
+        window.onload = function () {
+            var elements = document.getElementsByClassName('txt-rotate');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+            document.body.appendChild(css);
+        };
+        toggle = document.querySelectorAll(".toggle")[0];
+        nav = document.querySelectorAll("nav")[0];
+        toggle_open_text = 'Menu';
+        toggle_close_text = 'Close';
+
+        toggle.addEventListener('click', function () {
+            nav.classList.toggle('open');
+
+            if (nav.classList.contains('open')) {
+                toggle.innerHTML = toggle_close_text;
+            } else {
+                toggle.innerHTML = toggle_open_text;
+            }
+        }, false);
+
+        setTimeout(function () {
+            nav.classList.toggle('open');
+        }, 800);
     </script>
 </body>
+
 </html>
